@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include menu %>
+
+
+        <!-- 内容区域 -->
+        <div class="tpl-content-wrapper" style>
+
+            <div class="container-fluid am-cf">
+                <div class="row">
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                        <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span>接诊记录表</div>
+                        <p class="page-header-description">填表说明</p>
+                        <p class="page-header-description">  1．本表供居民由于急性或短期健康问题接受咨询或医疗卫生服务时使用，应以能够如实反映居民接受服务的全过程为目的、根据居民接受服务的具体情况填写。 </p>
+                        <p class="page-header-description"> 2．就诊者的主观资料：包括主诉、咨询问题和卫生服务要求等。 </p>
+                        <p class="page-header-description">   3．就诊者的客观资料：包括查体、实验室检查、影像检查等结果。 </p>
+                        <p class="page-header-description">   4．评估：根据就诊者的主、客观资料作出的初步印象、疾病诊断或健康问题评估。 </p>
+                        <p class="page-header-description">  5．处置计划：指在评估基础上制定的处置计划，包括诊断计划、治疗计划、病人指导计划等。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-content am-cf">
+                <div class="row  am-cf">
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                        <div class="widget am-cf">
+                            <div class="widget-head am-cf">
+                                <div class="widget-title am-fl">编号：XXXX-YNXXS</div>
+                                <div class="widget-function am-fr">
+                                    <a href="javascript:;" class="am-icon-cog"></a>
+                                </div>
+                            </div>
+                            <div class="widget-body am-fr">
+
+                                <form class="am-form tpl-form-line-form">
+                                    <div class="am-form-group">
+                                        <label for="user-name" class="am-u-sm-3 am-form-label">姓名</label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入姓名">
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-intro" class="am-u-sm-3 am-form-label">就诊者的主观资料：</label>
+                                        <div class="am-u-sm-9">
+                                            <textarea class="border1px" style="border:1px solid #c2cad8;" rows="10" id="user-intro" placeholder="请输入就诊者的主观资料"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-intro" class="am-u-sm-3 am-form-label">就诊者的客观资料：</label>
+                                        <div class="am-u-sm-9">
+                                            <textarea class="border1px" style="border:1px solid #c2cad8;" rows="10" id="user-intro" placeholder="请输入就诊者的客观资料"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-intro" class="am-u-sm-3 am-form-label">评估：</label>
+                                        <div class="am-u-sm-9">
+                                            <textarea class="border1px" style="border:1px solid #c2cad8;" rows="10" id="user-intro" placeholder="请输入评估内容"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-intro" class="am-u-sm-3 am-form-label">处置计划：</label>
+                                        <div class="am-u-sm-9">
+                                            <textarea class="border1px" style="border:1px solid #c2cad8;" rows="10" id="user-intro" placeholder="请输入处置计划"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <label for="user-name" class="am-u-sm-3 am-form-label">医生签字</label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" id="user-name">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">接诊日期 <span class="tpl-form-line-small-title">Time</span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="am-form-field tpl-form-no-bg" placeholder="发布时间" data-am-datepicker="" readonly="">
+                                            <small>发布时间为必填</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="am-form-group">
+                                        <div class="am-u-sm-12 am-u-sm-push-12">
+                                            <button type="button" id="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+</div>
+<script>
+    var submit = document.getElementById('submit')
+    submit.onclick = function(){
+        alert("您已提交成功！")
+    }
+</script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/amazeui.datatables.min.js"></script>
+    <script src="assets/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include menu %>
+
+        <!-- 内容区域 -->
+<div class="tpl-content-wrapper">
+
+
+    <div class="row-content am-cf">
+
+
+        <div class="row">
+            <div style="padding-bottom: 2em"> <h3>填表说明</h3>
+                <p>1．本表用于居民首次建立健康档案时填写。如果居民的个人信息有所变动，可在原条目处修改，并注明修改时间。<br>
+                    2．性别：按照国标分为未知的性别、男、女及未说明的性别。<br>
+                    3．出生日期：根据居民身份证的出生日期，按照年（4位）、月（2位）、日（2位）顺序填写，如19490101。<br>
+                    4．工作单位：应填写目前所在工作单位的全称。离退休者填写最后工作单位的全称；下岗待业或无工作经历者须具体注明。<br>
+                    5．联系人姓名：填写与建档对象关系紧密的亲友姓名。<br>
+                    6．民族：少数民族应填写全称，如彝族、回族等。<br>
+                    7．血型：在前一个“□”内填写与ABO血型对应编号的数字；在后一个“□”内填写是否为“RH阴性”对应编号的数字。<br>
+                    8．文化程度：指截至建档时间，本人接受国内外教育所取得的最高学历或现有水平所相当的学历。<br>
+                    9．药物过敏史：表中药物过敏主要列出青霉素、磺胺或者链霉素过敏，如有其他药物过敏，请在其他栏中写明名称，可以多选。<br>
+                    10．既往史：包括疾病史、手术史、外伤史和输血史。<br>
+                    （1）疾病  填写现在和过去曾经患过的某种疾病，包括建档时还未治愈的慢性病或某些反复发作的疾病，并写明确诊时间，如有恶性肿瘤，请写明具体的部位或疾病名称，如有职业病，请填写具体名称。对于经医疗单位明确诊断的疾病都应以一级及以上医院的正式诊断为依据，有病史卡的以卡上的疾病名称为准，没有病史卡的应有证据证明是经过医院明确诊断的。可以多选。<br>
+                    （2）手术  填写曾经接受过的手术治疗。如有，应填写具体手术名称和手术时间。<br>
+                    （3）外伤  填写曾经发生的后果比较严重的外伤经历。如有，应填写具体外伤名称和发生时间。<br>
+                    （4）输血  填写曾经接受过的输血情况。如有，应填写具体输血原因和发生时间。<br>
+                    11．家族史：指直系亲属（父亲、母亲、兄弟姐妹、子女）中是否患过所列出的具有遗传性或遗传倾向的疾病或症状。有则选择具体疾病名称对应编号的数字，没有列出的请在 “       ”上写明。可以多选。<br>
+                    12.生活环境：农村地区在建立居民健康档案时需根据实际情况选择填写此项。</p>
+            </div>
+
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                <div class="widget am-cf">
+                    <div class="widget-head am-cf">
+                        <div class="widget-title am-fl">个人基本信息表</div>
+                        <div class="widget-function am-fr">
+                            <a href="javascript:;" class="am-icon-cog"></a>
+                        </div>
+                    </div>
+                    <div class="widget-body am-fr">
+                        <form class="am-form tpl-form-border-form tpl-form-border-br">
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">姓名</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入姓名">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">性别</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">未知的性别</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">男</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">女</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">未说明的性别</label>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">身份证号 </label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-id" placeholder="请输入身份证号">
+
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-email" class="am-u-sm-3 am-form-label">出生日期</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="am-form-field tpl-form-no-bg" placeholder="出生日期" data-am-datepicker="" readonly="">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">工作单位</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入工作单位">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">本人电话</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入本人电话">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">联系人姓名</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入联系人姓名">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">联系人电话</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入联系人电话">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">民族</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入民族">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">血型</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-name1" value="">A型</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name1" value="">B型</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name1" value="">O型</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name1" value="">AB型</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name1" value="">不详</label>
+                                    <small>RH阴性： <label><input type="radio" class="tpl-form-input" name="user-name2" value="">是</label>
+                                        <label><input type="radio" class="tpl-form-input" name="user-name2" value="">否</label>
+                                        <label><input type="radio" class="tpl-form-input" name="user-name2" value="">不详</label>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">文化程度</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-name3" value="">文盲及半文盲</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name3" value="">小学</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name3" value="">初中</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name3" value="">高中/技校/中专</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name3" value="">大学专科及以上</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name3" value="">不详</label>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">职业</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-name4" value="">国家机关、党群组织、企业、事业单位负责人</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name4" value="">专业技术人员</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name4" value="">办事人员和有关人员</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name4" value="">商业、服务业人员</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name4" value="">农、林、牧、渔、水利生产人员</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name4" value="">生产、运输设备操作人员及有关人员</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name4" value="">军人</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name4" value="">不便分类的其他从业人员</label>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">婚姻状况</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-name5" value="">未婚</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name5" value="">已婚</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name5" value="">丧偶</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name5" value="">离婚</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name5" value="">未说明的婚姻状况</label>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">医疗费用支付方式</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-name6" value="">城镇职工基本医疗保险</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name6" value="">城镇居民基本医疗保险</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name6" value="">新型农村合作医疗</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name6" value="">贫困救助</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name6" value="">商业医疗保险</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name6" value="">全公费</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name6" value="">全自费</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name6" value="">其他</label>
+                                    <input type="text" placeholder="请输入其他的支付方式">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">药物过敏史</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-name7" value="">无</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name7" value="">青霉素</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name7" value="">磺胺</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name7" value="">链霉素</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name7" value="">其他</label>
+                                    <input type="text" placeholder="请输入其他药物过敏史">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">暴露史</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-name8" value="">无</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name8" value="">化学品</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name8" value="">毒物</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name8" value="">射线</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                <div class="widget am-cf">
+                    <div class="widget-head am-cf">
+                        <div class="widget-title am-fl">既往史</div>
+                        <div class="widget-function am-fr">
+                            <a href="javascript:;" class="am-icon-cog"></a>
+                        </div>
+                    </div>
+                    <div class="widget-body am-fr">
+                        <form class="am-form tpl-form-border-form tpl-form-border-br">
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">手术</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-name9" value="">无</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-name9" value="">有</label>
+                                    <div class="am-u-sm-12"><input type="text" placeholder="请输入手术名称"></div>
+                                    <div class="am-u-sm-6 am-u-end">
+                                        <input type="text" class="am-form-field tpl-form-no-bg" placeholder="手术日期" data-am-datepicker="" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">外伤</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-namea" value="">无</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namea" value="">有</label>
+                                    <div class="am-u-sm-12"><input type="text" placeholder="请输入外伤名称"></div>
+                                    <div class="am-u-sm-6 am-u-end">
+                                        <input type="text" class="am-form-field tpl-form-no-bg" placeholder="负伤日期" data-am-datepicker="" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">输血</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameb" value="">无</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameb" value="">有</label>
+                                    <div class="am-u-sm-12"><input type="text" placeholder="请输入原因"></div>
+                                    <div class="am-u-sm-6 am-u-end">
+                                        <input type="text" class="am-form-field tpl-form-no-bg" placeholder="输血日期" data-am-datepicker="" readonly="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">疾病</label>
+                                <div class="am-u-sm-9">
+                                    <div class="am-u-sm-12"><input type="text" placeholder="请输入符合疾病的序号"></div>
+                                    <div class="am-u-sm-6 am-u-end">
+                                        <input type="text" class="am-form-field tpl-form-no-bg" placeholder="患病日期" data-am-datepicker="" readonly="">
+                                    </div>
+                                </div>
+                                <div class="am-form-group am-u-sm-9">
+                                    <small>1.无2.高血压3.糖尿病4.冠心病5.慢性阻塞性肺疾病6.恶性疾病7.脑卒中8.重性精神疾病9.结核病10.肝炎11.其他法定传染病12.职业病13.其他</small>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                <div class="widget am-cf">
+                    <div class="widget-head am-cf">
+                        <div class="widget-title am-fl">家族史</div>
+                        <div class="widget-function am-fr">
+                            <a href="javascript:;" class="am-icon-cog"></a>
+                        </div>
+                    </div>
+                    <div class="widget-body am-fr">
+                        <form class="am-form tpl-form-border-form tpl-form-border-br">
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">父亲</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入下列符合疾病的序号">
+                                </div>
+                                <label for="user-name" class="am-u-sm-3 am-form-label">母亲</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入下列符合疾病的序号">
+                                </div>
+                                <label for="user-name" class="am-u-sm-3 am-form-label">兄弟姐妹</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入下列符合疾病的序号">
+                                </div>
+                                <label for="user-name" class="am-u-sm-3 am-form-label">子女</label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入下列符合疾病的序号">
+                                </div>
+                                <div class="am-form-group am-u-sm-9">
+                                    <small>1.无2.高血压3.糖尿病4.冠心病5.慢性阻塞性肺疾病6.恶性疾病7.脑卒中8.重性精神疾病9.结核病10.肝炎11.先天畸形12.其他</small>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">遗传病史</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-namec" value="">无</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namec" value="">有</label>
+                                    <input type="text" placeholder="请输入疾病名称">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">残疾情况</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-named" value="">无残疾</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-named" value="">视力残疾</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-named" value="">听力残疾</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-named" value="">言语残疾</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-named" value="">肢体残疾</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-named" value="">智力残疾</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-named" value="">精神残疾</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-named" value="">其他残疾</label>
+                                    <input type="text" placeholder="请输入其他疾病名称">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                <div class="widget am-cf">
+                    <div class="widget-head am-cf">
+                        <div class="widget-title am-fl">生活环境*</div>
+                        <div class="widget-function am-fr">
+                            <a href="javascript:;" class="am-icon-cog"></a>
+                        </div>
+                    </div>
+                    <div class="widget-body am-fr">
+                        <form class="am-form tpl-form-border-form tpl-form-border-br">
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">厨房排风设施</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-namee" value="">无</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namee" value="">油烟机</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namee" value="">换气扇</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namee" value="">烟囱</label>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">燃料类型</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-namef" value="">液化气</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namef" value="">煤</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namef" value="">天然气</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namef" value="">沼气</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namef" value="">柴火</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namef" value="">其他</label>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">饮水</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameg" value="">自来水</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameg" value="">经净化过滤的水</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameg" value="">井水</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameg" value="">河湖水</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameg" value="">塘水</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameg" value="">其他</label>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">厕所</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameq" value="">卫生厕所</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameq" value="">一格或二格粪池式</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameq" value="">马桶</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameq" value="">露天粪坑</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-nameq" value="">简易棚厕</label>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">禽畜栏</label>
+                                <div class="am-u-sm-9">
+                                    <label><input type="radio" class="tpl-form-input" name="user-namex" value="">单设</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namex" value="">室内</label>
+                                    <label><input type="radio" class="tpl-form-input" name="user-namex" value="">室外</label>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <div class="am-u-sm-9 am-u-sm-push-3">
+                                    <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success " id="submit">提交</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script>
+            var submit = document.getElementById('submit')
+            submit.onclick = function(){
+                alert("您已提交成功！")
+            }
+        </script>
+
+        <script src="assets/js/amazeui.min.js"></script>
+        <script src="assets/js/amazeui.datatables.min.js"></script>
+        <script src="assets/js/dataTables.responsive.min.js"></script>
+        <script src="assets/js/app.js"></script>
+
+        </body>
+
+</html>

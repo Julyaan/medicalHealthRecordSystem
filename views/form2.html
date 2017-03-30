@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include menu %>
+        <!-- 内容区域 -->
+        <div class="tpl-content-wrapper">
+
+
+            <div class="row-content am-cf">
+
+
+                <div class="row">
+                   <div style="padding-bottom: 2em"> <h3>填表说明</h3>
+                   <p>1．本表用于居民首次建立健康档案以及老年人、高血压、2型糖尿病和重性精神疾病患者等的年度健康检查。<br>
+                       2．表中带有*号的项目，在为一般居民建立健康档案时不作为免费检查项目，不同重点人群的免费检查项目按照各专项服务规范的要求执行。<br>
+                    3．出生日期：根据居民身份证的出生日期，按照年（4位）、月（2位）、日（2位）顺序填写，如19490101。<br>
+                    4．工作单位：应填写目前所在工作单位的全称。离退休者填写最后工作单位的全称；下岗待业或无工作经历者须具体注明。<br>
+                    5．联系人姓名：填写与建档对象关系紧密的亲友姓名。<br>
+                    6．民族：少数民族应填写全称，如彝族、回族等。<br>
+                    7．血型：在前一个“□”内填写与ABO血型对应编号的数字；在后一个“□”内填写是否为“RH阴性”对应编号的数字。<br>
+                    8．文化程度：指截至建档时间，本人接受国内外教育所取得的最高学历或现有水平所相当的学历。<br>
+                    9．药物过敏史：表中药物过敏主要列出青霉素、磺胺或者链霉素过敏，如有其他药物过敏，请在其他栏中写明名称，可以多选。<br>
+                   10．住院治疗情况：指最近1年内的住院治疗情况。应逐项填写。日期填写年月，年份必须写4位。如因慢性病急性发作或加重而住院/家庭病床，请特别说明。医疗机构名称应写全称。<br>
+                   11．主要用药情况（老年人健康管理年度体检时不需填写“服药依从性”一栏）：对长期服药的慢性病患者了解其最近1年内的主要用药情况，西药填写化学名（通用名）而非商品名，中药填写药品名称或中药汤剂，用法、用量按医生医嘱填写。用药时间指在此时间段内一共服用此药的时间，单位为年、月或天。服药依从性是指对此药的依从情况，“规律”为按医嘱服药，“间断”为未按医嘱服药，频次或数量不足，“不服药”即为医生开了处方，但患者未使用此药。<br>
+                   12．非免疫规划预防接种史：填写最近1年内接种的疫苗的名称、接种日期和接种机构。疫苗名称填写应完整准确。</p>
+               </div>
+
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                        <div class="widget am-cf">
+
+                            <div class="widget-head am-cf">
+                                    <div class="widget-title am-fl">健康体检表</div>
+                                    <div class="widget-function am-fr">
+                                        <a href="javascript:;" class="am-icon-cog"></a>
+                                    </div>
+                                </div>
+                                <div class="widget-body am-fr">
+                                    <form class="am-form tpl-form-border-form tpl-form-border-br">
+                                        <div class="am-form-group">
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">姓名</label>
+                                            <div class="am-u-sm-9">
+                                                <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入姓名">
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group">
+                                            <label for="user-em" class="am-u-sm-3 am-form-label">体检日期</label>
+                                            <div class="am-u-sm-9">
+                                                <input type="text" class="am-form-field tpl-form-no-bg" placeholder="体检日期" data-am-datepicker="" readonly="">
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group">
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">责任医生</label>
+                                            <div class="am-u-sm-9">
+                                                <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入医生姓名">
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group">
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">症状</label>
+                                            <div class="am-u-sm-9">
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">无</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">头痛</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">头晕</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">心悸</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">胸闷</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">胸痛</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">慢性咳嗽</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">咳痰</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">呼吸困难</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">多饮</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">多尿</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">体重下降</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">乏力</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">关节肿痛</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">视力模糊</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">手脚麻木</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">尿急</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">尿痛</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">便秘</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">腹泻</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">恶心呕吐</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">眼花</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">耳鸣</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">乳房胀痛</label>
+                                                <label><input type="checkbox" class="tpl-form-input" name="user-namee" value="">其他</label>
+                                            </div>
+                                            <div class="am-u-sm-9">
+                                                <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入其他症状">
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group">
+                                            <div class="am-form-group">
+                                                <label for="user-name" class="am-u-sm-3 am-form-label" ><b>一般症状</b></label>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">体温</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="仅输入数字，单位为℃">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">脉率</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="仅输入数字，单位为次/分钟">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">呼吸频率</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="仅输入数字，单位为次/分钟">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">血压左侧</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="仅输入数字，单位为mmHg">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">血压右侧</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="仅输入数字，单位为mmHg">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">身高</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="仅输入数字，单位为cm">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">体重</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="仅输入数字，单位为kg">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">腰围</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="仅输入数字，单位为cm">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">体质指数</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="仅输入数字，单位为kg/m的平方">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">老年人健康状态自我评估*</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">满意</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">基本满意</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">说不清楚</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">不太满意</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">不满意</label>
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">老年人生活自理能力自评估*</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">可自理（0-3分）</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">轻度依赖（4-8分）</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">中度依赖（9-18分）</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">不能自理（>=19分）</label>
+
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">老年人认知功能*</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">粗筛阴性</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">粗筛阳性</label>
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="输入老年人简易智力状态检查总分">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">老年人情感状态*</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">粗筛阴性</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">粗筛阳性</label>
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="输入老年人抑郁检查总分">
+                                                </div>
+                                            </div>
+                                            </div>
+                                        <div class="am-form-group">
+                                            <div class="am-form-group">
+                                                <label for="user-name" class="am-u-sm-3 am-form-label" ><b>生活方式</b></label>
+                                            </div>
+                                            <div class="am-form-group">
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">体育锻炼</label>
+                                            </div>
+                                                <label for="user-name" class="am-u-sm-3 am-form-label" style="font-size: small">锻炼频率</label>
+                                                    <div class="am-u-sm-9">
+                                                         <div class="am-u-sm-9">
+                                                            <label><input type="radio" class="tpl-form-input" name="user-name" value="">每天</label>
+                                                              <label><input type="radio" class="tpl-form-input" name="user-name" value="">每天一次以上</label>
+                                                              <label><input type="radio" class="tpl-form-input" name="user-name" value="">偶尔</label>
+                                                               <label><input type="radio" class="tpl-form-input" name="user-name" value="">不锻炼</label>
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label" style="font-size: small">每次锻炼时间</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入时间，单位为分钟">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label" style="font-size: small">坚持锻炼时间</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入数字，单位为年">
+                                                </div>
+                                            </div>
+                                            <label for="user-name" class="am-u-sm-3 am-form-label" style="font-size: small">锻炼方式</label>
+                                            <div class="am-u-sm-9">
+                                                <div class="am-u-sm-9">
+                                                    <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入锻炼方式">
+                                                </div>
+                                            </div>
+                                            <div class="am-form-group">
+                                                <label for="user-name" class="am-u-sm-3 am-form-label">饮食习惯</label>
+                                            </div>
+                                            <div class="am-u-sm-9">
+
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">荤素均衡</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">荤食为主</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">素食为主</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">嗜盐</label>
+                                                    <label><input type="radio" class="tpl-form-input" name="user-name" value="">嗜糖</label>
+                                                </div>
+                                            </div>
+
+                                        <div class="am-form-group">
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">性别</label>
+                                            <div class="am-u-sm-9">
+                                                <label><input type="radio" class="tpl-form-input" name="user-name" value="">未知的性别</label>
+                                                <label><input type="radio" class="tpl-form-input" name="user-name" value="">男</label>
+                                                <label><input type="radio" class="tpl-form-input" name="user-name" value="">女</label>
+                                                <label><input type="radio" class="tpl-form-input" name="user-name" value="">未说明的性别</label>
+                                            </div>
+                                        </div>
+                                        <div class="am-form-group">
+                                            <label for="user-name" class="am-u-sm-3 am-form-label">身份证号 </label>
+                                            <div class="am-u-sm-9">
+                                                <input type="text" class="tpl-form-input" id="user-id" placeholder="请输入身份证号">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="am-form-group">
+                                            <label for="user-emai" class="am-u-sm-3 am-form-label">出生日期</label>
+                                            <div class="am-u-sm-9">
+                                                <input type="text" class="am-form-field tpl-form-no-bg" placeholder="出生日期" data-am-datepicker="" readonly="">
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+<script>
+    var submit = document.getElementById('submit')
+    submit.onclick = function(){
+        alert("您已提交成功！")
+    }
+</script>
+
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/amazeui.datatables.min.js"></script>
+    <script src="assets/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
